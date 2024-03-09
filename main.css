@@ -30,20 +30,19 @@ ul li {
   .nav li {
     margin-left: 10px;
   }
-  
   .signup {
     padding: 15px 30px; 
     position: relative;
     background-color: black;
     color: white;
     border: none;
-    border-radius: 20px; 
+    border-radius: 10px; 
     position: right;
+    font-size: 15px;
   }
  
 
-  /* body css */
-  body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -55,42 +54,29 @@ header {
     display: inline-block;
     margin-left: 20px;
 }
-main {
-    text-align: center;
-    margin-top: 20px;
-}
 
   body {
-    padding: 20px;
-  }
-
-  .image {
-    position: relative;
-    display: inline-block;
-  }
-
-  .image {
-    position: relative;
-    display: inline-block;
-  }
+    padding: 50px;
+  } 
   
-  .shopnow {
+ .fashion {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+  
+  /*This is the first part to the html, it has the nav and shop now button */
+.banner{
+    height: 55vh;
+    background-color: #F4F6F5;
+}
+  .girl {
     position: absolute;
-    top: 97%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    padding: 15px 30px; 
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 10px; 
-  }
+    /* bottom: calc(55vh - 148px); */
+    right: 0px;
+    
+}
+/* banner css */
 
-  .shopnow:hover {
-    background-color: #555;
-  }
-  
  
-  
- 
-  
+/* mobile mockup */
+
