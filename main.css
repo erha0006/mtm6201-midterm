@@ -1,8 +1,12 @@
 /* Header Css */
 
+h1 {
+    padding: 20px;
+}
+
 ul {
     list-style-type: none;
-    margin: 20px;
+    margin: 0;
     padding: 20px;
     text-align: right;
   }
@@ -27,6 +31,7 @@ ul li {
     align-items: right; 
   }
   
+ 
   .nav li {
     margin-left: 10px;
   }
@@ -55,10 +60,7 @@ header {
     margin-left: 20px;
 }
 
-  body {
-    padding: 50px;
-  } 
-  
+ 
  .fashion {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -66,17 +68,129 @@ header {
   
   /*This is the first part to the html, it has the nav and shop now button */
 .banner{
-    height: 55vh;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    height: 100vh;
     background-color: #F4F6F5;
+    background-image: url(images/girl.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
   .girl {
     position: absolute;
     /* bottom: calc(55vh - 148px); */
-    right: 0px;
-    
+    right: 0px;   
 }
-/* banner css */
 
+.words {
+    font-size: 5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    padding: 4%;    
+}
+
+
+.shop {
+    padding: 20px 40px; 
+    position: absolute;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px; 
+    position: right;
+    font-size: 20px;
+    margin: 2rem;
+  }
  
+/* brands css */
+
+.brands {
+    background-color: #EBD96B;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+/* New Arrivals css */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+/* Payday sale now css/girl is the image */
+.yellowgirl {
+    margin: 0.5rem;
+    border-radius: 2rem;
+    height: 100vh; 
+    background-image: url(images/girl4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.background {
+    margin: 0;
+    height: 100vh; 
+    width: auto;
+    display: flex;
+    justify-content: right;
+    float: right;
+}
+.payday {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 4%; 
+    margin: 10%;   
+    position: absolute;
+    left: 47%;
+    bottom: -230%;
+    text-align: center;
+}
+.small {
+    padding: 4%; 
+    margin: 10%;   
+    position: absolute;
+    left: 50%;
+    bottom: -250%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.june {
+    padding: 4%; 
+    margin: 10%;   
+    position: absolute;
+    left: 51%;
+    bottom: -260%;
+    text-align: center;
+    font-size: 25px;
+}
+.now {
+    margin: 10%;   
+    position: absolute;
+    left: 60%;
+    bottom: -265%;
+    text-align: center;
+    padding: 20px 40px; 
+    position: absolute;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px; 
+    position: right;
+    font-size: 20px;
+}
+
+
 /* mobile mockup */
+
+
 
