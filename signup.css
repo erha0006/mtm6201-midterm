@@ -1,0 +1,24 @@
+/* signup page css */
+header {
+    background-color:#EBD96B;
+    ;
+}
+body {
+    margin: 2%;
+    font-size: 25px;
+}
+
+.button {
+    padding: 15px 30px; 
+    position: relative;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px; 
+    position: right;
+    font-size: 15px;
+  }
+footer {
+    background-color: #EBD96B;
+    color:#EBD96B;
+}

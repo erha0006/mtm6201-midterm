@@ -137,12 +137,11 @@ header {
 }
 
 .background {
-    margin: 0;
     height: 100vh; 
     width: auto;
     display: flex;
-    justify-content: right;
     float: right;
+    border-radius: 2rem;
 }
 .payday {
     font-size: 5rem;
@@ -189,8 +188,23 @@ header {
     font-size: 20px;
 }
 
+/* Young favourites css */
+
+
+.girls {
+    display: flex;
+    margin: 3%;
+  }
+  
+  .girls img {
+    width: calc(98% - 10px); 
+    height: auto; 
+    margin: 0 10px; 
+    border-radius: 15px; 
+  }
 
 /* mobile mockup */
 
 
+/* Contact Page is on another type of css page*/
 
