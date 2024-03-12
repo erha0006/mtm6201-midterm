@@ -1,3 +1,213 @@
+/* mobile mockup */
+@media screen {
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  padding: 10px;
+  text-align: center;
+}
+.fashion {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.signup {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font: optional: 14px;
+}
+.banner {
+  height: 50vh;
+  background-color:#F4F6F5;
+  background-image: url(images/girl.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.words {
+  font-size: 2rem; 
+  font-weight: bold;
+  padding-top: 20%;
+}
+.shop {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.brands img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.container img {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.yellowgirl {
+  height: 50vh;
+  background-image: url(images/girl4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: relative;
+  text-align: center;
+}
+.payday {
+  font-size: 14px;
+  padding: 20% 0;
+}
+.small {
+  font-size: 14px;
+  padding: 20% 0;
+}
+.june {
+  font-size: 14px;
+  padding: 20% 0;
+}
+.now {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.girls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.girls div {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.girls img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+}
+@media (max-width: 768px) {
+  .nav {
+    text-align: center;
+  }
+  .nav li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .signup,
+  .shop,
+  .now {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .banner {
+    height: 40vh;
+  }
+  .brands img,
+  .container img {
+    width: 100%;
+  }
+  .girls div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .words {
+    font-size: 1.5rem;
+  }
+  .payday,
+  .small,
+  .june {
+    font-size: 12px;
+  }
+  .signup,
+  .shop,
+  .now {
+    font-size: 12px;
+  }
+  .banner {
+    height: 30vh;
+  }
+}
+
+/* accessablity */
+.links ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.links ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.links ul li a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+.skip-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+  background-color: black;
+  color: white;
+  padding: .5em 1em;
+  font-weight: bold;
+}
+
+.skip-links a:focus {
+  top: 0; 
+}
 /* Header Css */
 
 h1 {
@@ -45,6 +255,15 @@ ul li {
     position: right;
     font-size: 15px;
   }
+  /* adding animation to the button */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.signup:hover {
+    animation: spin 2s infinite;
+}
  
 
 body {
@@ -103,7 +322,16 @@ header {
     font-size: 20px;
     margin: 2rem;
   }
- 
+  /* added animation to button */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Apply the keyframe animation to buttons on hover */
+.shop:hover {
+    animation: spin 2s infinite;
+}
 /* brands css */
 
 .brands {
@@ -124,6 +352,19 @@ header {
     width: 100%;
     height: auto;
     border-radius: 10%;
+}
+/* adding animations to the photos of the three girls */
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.container img {
+  transition: transform 0.3s ease;
+}
+
+.container:hover img {
+  transform: scale(1.1);
 }
 /* Payday sale now css/girl is the image */
 .yellowgirl {
@@ -187,6 +428,15 @@ header {
     position: right;
     font-size: 20px;
 }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Apply the keyframe animation to buttons on hover */
+.now:hover {
+  animation: spin 2s infinite;
+}
 
 /* Young favourites css */
 
@@ -203,8 +453,7 @@ header {
     border-radius: 15px; 
   }
 
-/* mobile mockup */
 
 
-/* Contact Page is on another type of css page*/
+
 
