@@ -1,126 +1,5 @@
 /* mobile mockup */
-@media screen {
-body {
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-header {
-  padding: 10px;
-  text-align: center;
-}
-.fashion {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: right;
-}
-.nav li {
-  display: inline-block;
-  margin-left: 10px;
-}
-.signup {
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font: optional: 14px;
-}
-.banner {
-  height: 50vh;
-  background-color:#F4F6F5;
-  background-image: url(images/girl.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-.words {
-  font-size: 2rem; 
-  font-weight: bold;
-  padding-top: 20%;
-}
-.shop {
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-}
-.brands {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-}
-.brands img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-}
-.container img {
-  width: calc(50% - 10px);
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-.yellowgirl {
-  height: 50vh;
-  background-image: url(images/girl4.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
-  position: relative;
-  text-align: center;
-}
-.payday {
-  font-size: 14px;
-  padding: 20% 0;
-}
-.small {
-  font-size: 14px;
-  padding: 20% 0;
-}
-.june {
-  font-size: 14px;
-  padding: 20% 0;
-}
-.now {
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-.girls {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-}
-.girls div {
-  width: calc(50% - 10px);
-  margin-bottom: 20px;
-  text-align: center;
-}
-.girls img {
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-}
+
 @media (max-width: 768px) {
   .nav {
     text-align: center;
@@ -452,8 +331,104 @@ header {
     margin: 0 10px; 
     border-radius: 15px; 
   }
+/* creeating app store/google apps div with phone on the side */
 
+.phone {
+  padding: 14%;
+}
 
+.download {
+  display: flex;
+  justify-content: left;
+  font-size: 60px;
+  font-weight: bold;
+}
+.app {
+  display: flex;
+  
+}
+.iphone {
+  display: flex;
+  justify-content: right;
+  margin-top: -35%;
+  height: 75vh;
+}
+.iphone img {
+  border-radius: 5%;
+  box-shadow: 0 0 50px grey;
+}
+/* creating monthly promo at the end */
+.promo {
+  background-color: #E5C643;
+  margin: 3%;
+  padding: 100px;
+}
+.join,
+.email {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.join {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.email {
+  font-size: 30px;
+}
+.send {
+  text-align: center;
+}
+input[type="email"] {
+  padding: 10px;
+  margin-right: 0;
+}
+.but {
+    padding: 20px 40px; 
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px; 
+    position: right;
+    font-size: 20px;
+    margin: 2rem;
+}
+/* adding animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.but:hover {
+  animation:spin 2s infinite;
+}
+/* creating final black div */
 
+.black {
+  background-color: black;
+  padding: 7%;
+  margin: 3%;
+  color: white;
+}
+.f,
+.complete {
+  display: flex;
+  justify-content: left;
+}
+.logos div {
+  display: inline-block;
+  margin-left: 10px;
+}
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  margin-left: 50%;
+}
 
+.row {
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  align-items: start;
+}
