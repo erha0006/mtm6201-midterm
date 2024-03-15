@@ -1,0 +1,31 @@
+/* creating header */
+header {
+    background-color: #EBD96B;
+}
+body {
+    background-color: #fdf09c;
+    margin: 3%;
+}
+/* making main fashion html */
+.fashion {
+    display: flex;
+    justify-content: space-around;
+   
+}
+img {
+    border: 2px solid black;
+    background-color: white;
+    padding: 5px;
+}
+.girl4 {
+    text-align: center;
+}
+
+.girl4 img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    color: #EBD96B;
+    background-color: #EBD96B;
+}
